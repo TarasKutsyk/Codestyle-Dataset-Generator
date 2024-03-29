@@ -1,0 +1,6 @@
+# The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct, as in:
+result = some_function_that_takes_arguments(
+    'a', 'b', 'c',
+    'd', 'e', 'f',
+)
+--

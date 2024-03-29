@@ -1,0 +1,60 @@
+1.
+foo = another_long_function_name(
+    arg1, arg2, arg3,
+    arg4, arg5, arg6)
+
+2.
+result = some_function_with_many_arguments(
+    first_arg, second_arg,
+    third_arg, fourth_arg,
+    fifth_arg, sixth_arg)
+
+3.
+my_var = yet_another_lengthy_function_call(
+    param_a, param_b,
+    param_c, param_d,
+    param_e, param_f)
+
+4.
+value = this_is_a_long_function_name(
+    xyz, abc,
+    def, ghi,
+    jkl, mno)
+
+5.
+data = function_with_multiple_arguments(
+    arg1, arg2, arg3,
+    arg4, arg5, arg6,
+    arg7, arg8, arg9)
+
+6.
+output = call_function_with_many_params(
+    p1, p2, p3,
+    p4, p5, p6,
+    p7, p8, p9)
+
+7.
+x = lengthy_function_name(
+    a, b, c,
+    d, e, f,
+    g, h, i)
+
+8.
+y = another_long_func_name(
+    param1, param2,
+    param3, param4,
+    param5, param6)
+
+9.
+result = some_function_with_many_arguments(
+    first_arg, second_arg,
+    third_arg, fourth_arg,
+    fifth_arg, sixth_arg,
+    seventh_arg, eighth_arg)
+
+10.
+data = function_with_multiple_arguments(
+    arg1, arg2, arg3,
+    arg4, arg5, arg6,
+    arg7, arg8, arg9,
+    arg10, arg11, arg12)
