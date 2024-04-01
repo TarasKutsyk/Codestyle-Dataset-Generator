@@ -26,17 +26,17 @@ You will be given an example of a stylistically {{correct}} code snippet, and yo
 
 <example>
 
-# Add some extra indentation on the conditional continuation line.\nif (this_is_one_thing\n        and that_is_another_thing):\n    do_something()
+# Add some extra indentation on the conditional continuation line. Logical operators should be carried to the next line\nif (this_is_one_thing\n        and that_is_another_thing):
 
 </example>
 
-<output_format>
+<output_instruction>
 
-1. Start your output with specifically defining the style rule you inferred from the provided example and the comment (see rule #2, rule #6). Use <style_rule> tags to wrap this section into.
+1. Start your output with specifically defining the style rule you inferred from the provided example and the comment, using rules #2, #6. Wrap this section into <style_rule> tag.
 
-2. Then define the other aspects you can change in your samples (see rule #4). Use <style_rule> tags to wrap this section into. Use <other_aspects> tags to wrap this section into.
+2. Then define the other aspects you can change in your samples, using rule #4. Wrap this section into <other_aspects>.
 
-3. Finally, generate your samples(only code, without comments) using rules #1, #3 and #5. The format should be the following:
+3. Finally, considering all the information from the <style_rule> and <other_aspects> blocks, generate your samples using rules #1, #3 and #5 (only code, without comments). The format should be the following:
 
 <result>
 
@@ -44,15 +44,11 @@ You will be given an example of a stylistically {{correct}} code snippet, and yo
 
 {Your sample #1}
 
+2.
+
+{Your sample #2}
+
 ...
-
-8.
-
-{Your sample #8}
-
-9.
-
-{Your sample #9}
 
 10.
 
@@ -60,4 +56,4 @@ You will be given an example of a stylistically {{correct}} code snippet, and yo
 
 <result/>
 
-<output_format/>
+<output_instruction/>
