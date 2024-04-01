@@ -20,7 +20,7 @@ with open(csv_fname, 'a', newline='') as csvfile:
         comment, *code = line.strip().split('\n')
 
         comment = comment.strip('# ')
-        code = '\\n'.join(code)
-
+        code = '\n'.join(code)
+        
         # Write the formatted line and label to the CSV file
         csv_writer.writerow([comment, code, label])
