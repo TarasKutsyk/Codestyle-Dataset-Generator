@@ -1,34 +1,44 @@
-You will help me create two datasets for correcting a code style according to PEP 8 Python guideline. The datasets are in the format "code snippet - correct/wrong label".
+You are an expert programmer with extensive experience and vast knowledge of different industries. You will help me create a dataset for correcting a code style according to the PEP 8 Python guideline. The dataset will be in the format "code snippet - correct/wrong label"
 
-You will be given an example of a 
-{{
-label
-}}
-code snippet, and your task is to generate 10 similar snippets in total:
+You will be given an example of a stylistically {{correct}} code snippet, and your task is to generate a total of 10 similar snippets. When generating snippets, you must strictly adhere to the following rules:
 
-- 8 snippets for the training dataset
+<rules>
 
-- 2 snippets for the validation datasets
+1. Snippets should be identical in the style rule, but not in all other aspects.
 
-While generating snippers, you must strictly adhere to the following rules:
+2. To understand which style rule you should reproduce, pay special attention to the first comment in the snippet, which should give you an idea of how the generated samples should look.
 
-1. Snippets should be similar in the style rule, but not in the other aspects.
+3. Your generated samples should be identical in the idea, which means they must have the same style rule.
 
-2. To understand what style rule you should reproduce, pay special attention to the first comment in the snippet, which should give you an idea of how the generated samples must look like. You must not include this comment in your generated samples.
+4. Your generated samples must be as different as possible in all other aspects: 
 
-3. Your generated samples should be identical in the idea, meaning that they must have the same style rule
+- function/module/variable naming, 
 
-4. Your generated samples must be as diverse as possible in all the other aspects: naming of the function/modules/variables, number of function arguments (i.e. signature), length of expressions etc. Try to mimic the real-world usage scenarios in those other aspects.
+- number of function arguments (i.e. function signature), 
 
-5. Pay attention to the identation: some style rule**s rely on a specific number of spaces/tabs in each new line of code, so you want to keep **identation identical to the one provided in the example.
+- length of expressions, etc. 
 
-Example: 
-{{
-code
-}}
+5. Use all your creativity and industry knowledge to generate examples that are different (in other aspects) both from the provided example and from each other.
 
+6. Pay attention to the identation: some style rule**s rely on a specific number of spaces/tabs in each new line of code, so you want to keep **identation identical to the one provided in the example.
 
-Output your generated samples (only code, without comments) in the following format, where figure brackets {} are a placeholder for your generated text:
+</rules>
+
+<example>
+
+# Add some extra indentation on the conditional continuation line.\nif (this_is_one_thing\n        and that_is_another_thing):\n    do_something()
+
+</example>
+
+<output_format>
+
+1. Start your output with specifically defining the style rule you inferred from the provided example and the comment (see rule #2, rule #6). Use <style_rule> tags to wrap this section into.
+
+2. Then define the other aspects you can change in your samples (see rule #4). Use <style_rule> tags to wrap this section into. Use <other_aspects> tags to wrap this section into.
+
+3. Finally, generate your samples(only code, without comments) using rules #1, #3 and #5. The format should be the following:
+
+<result>
 
 1.
 
@@ -36,11 +46,11 @@ Output your generated samples (only code, without comments) in the following for
 
 ...
 
-8. 
+8.
 
 {Your sample #8}
 
-9. 
+9.
 
 {Your sample #9}
 
@@ -48,4 +58,6 @@ Output your generated samples (only code, without comments) in the following for
 
 {Your sample #10}
 
-Output:
+<result/>
+
+<output_format/>
