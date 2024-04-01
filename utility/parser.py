@@ -17,8 +17,10 @@ with open(csv_fname, 'a', newline='') as csvfile:
     csv_writer = csv.writer(csvfile)
 
     for line in lines:
-        formatted_line = line.strip().replace('\n', '\\n')
-        print(formatted_line)
-        
+        comment, *code = line.strip().split('\n')
+
+        comment = comment.strip('# ')
+        code = '\\n'.join(code)
+
         # Write the formatted line and label to the CSV file
-        csv_writer.writerow([formatted_line, label])
+        csv_writer.writerow([comment, code, label])

@@ -1,7 +1,8 @@
-code,label
-# No extra indentation.\nif (this_is_one_thing and\n    that_is_another_thing):\n    do_something(),correct
-# Add some extra indentation on the conditional continuation line.\nif (this_is_one_thing\n        and that_is_another_thing):\n    do_something(),correct
-"# The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct, as in:\nmy_list = [\n    1, 2, 3,\n    4, 5, 6,\n]",correct
-,correct
-"# The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct, as in:\nresult = some_function_that_takes_arguments(\n    'a', 'b', 'c',\n    'd', 'e', 'f',\n)",correct
-,correct
+style, code, label
+Aligned with opening delimiter.,"foo = long_function_name(var_one, var_two,\n                         var_three, var_four)",correct
+Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.,"def long_function_name(\n        var_one, var_two, var_three,\n        var_four):\n    print(var_one)",correct
+Hanging indents should add a level.,"foo = long_function_name(\n    var_one, var_two,\n    var_three, var_four)",correct
+No extra indentation.,if (this_is_one_thing and\n    that_is_another_thing):\n    do_something(),correct
+Add some extra indentation on the conditional continuation line.,if (this_is_one_thing\n        and that_is_another_thing):\n    do_something(),correct
+The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct,"my_list = [\n    1, 2, 3,\n    4, 5, 6,\n]",correct
+The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct,"result = some_function_that_takes_arguments(\n    'a', 'b', 'c',\n    'd', 'e', 'f',\n)",correct
