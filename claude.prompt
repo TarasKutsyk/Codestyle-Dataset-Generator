@@ -1,0 +1,51 @@
+You will help me create two datasets for correcting a code style according to PEP 8 Python guideline. The datasets are in the format "code snippet - correct/wrong label".
+
+You will be given an example of a 
+{{
+label
+}}
+code snippet, and your task is to generate 10 similar snippets in total:
+
+- 8 snippets for the training dataset
+
+- 2 snippets for the validation datasets
+
+While generating snippers, you must strictly adhere to the following rules:
+
+1. Snippets should be similar in the style rule, but not in the other aspects.
+
+2. To understand what style rule you should reproduce, pay special attention to the first comment in the snippet, which should give you an idea of how the generated samples must look like. You must not include this comment in your generated samples.
+
+3. Your generated samples should be identical in the idea, meaning that they must have the same style rule
+
+4. Your generated samples must be as diverse as possible in all the other aspects: naming of the function/modules/variables, number of function arguments (i.e. signature), length of expressions etc. Try to mimic the real-world usage scenarios in those other aspects.
+
+5. Pay attention to the identation: some style rule**s rely on a specific number of spaces/tabs in each new line of code, so you want to keep **identation identical to the one provided in the example.
+
+Example: 
+{{
+code
+}}
+
+
+Output your generated samples (only code, without comments) in the following format, where figure brackets {} are a placeholder for your generated text:
+
+1.
+
+{Your sample #1}
+
+...
+
+8. 
+
+{Your sample #8}
+
+9. 
+
+{Your sample #9}
+
+10.
+
+{Your sample #10}
+
+Output:
