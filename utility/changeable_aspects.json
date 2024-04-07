@@ -1,0 +1,31 @@
+{
+    "function signature": [ 
+        "number of function arguments",
+        "names of function arguments",
+        "length of function arguments (all arguments must be of different length)"
+    ],
+    "naming": [
+        "variable naming",
+        "function naming"
+    ],
+    "expressions": [
+        "names of the operands (variables used in an expression)",
+        "number of operands",
+        "operators: either logical or arithmetic operators, depending on what the example uses"
+    ],
+    "collections": [
+        "type of a collection data structure used (list/tuple/dictionary)"
+    ],
+    "module": [
+        "module naming"
+    ],
+    "types": [
+        "type name used in a type annotation"
+    ],
+    "exceptions": [
+        "type of an exception thrown"
+    ],
+    "statement": [
+        "type of a control flow statement (if/while)"
+    ]
+}

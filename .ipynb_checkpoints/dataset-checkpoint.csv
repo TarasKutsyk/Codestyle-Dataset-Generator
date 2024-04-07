@@ -1,0 +1,24 @@
+style,code,label
+Aligned with opening delimiter.,"foo = long_function_name(var_one, var_two,
+                         var_three, var_four)",correct
+Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.,"def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)",correct
+Hanging indents should add a level.,"foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)",correct
+No extra indentation.,"if (this_is_one_thing and
+    that_is_another_thing):
+    do_something()",correct
+Add some extra indentation on the conditional continuation line.,"if (this_is_one_thing
+        and that_is_another_thing):
+    do_something()",correct
+The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct,"my_list = [
+    1, 2, 3,
+    4, 5, 6,
+]",correct
+The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct,"result = some_function_that_takes_arguments(
+    'a', 'b', 'c',
+    'd', 'e', 'f',
+)",correct
