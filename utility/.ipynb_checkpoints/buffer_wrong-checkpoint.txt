@@ -1,40 +1,33 @@
 # Aligned with opening delimiter.
-# n/fs
 foo = long_function_name(var_one, var_two,
-                         var_three, var_four)
+                        var_three, var_four)
 --                
 # Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.
-# n/fs
 def long_function_name(
         var_one, var_two, var_three,
-        var_four):
+         var_four):
 --
 # Hanging indents should add a level.
-# n/fs
 foo = long_function_name(
-    var_one, var_two,
-    var_three, var_four)
+var_one, var_two,
+var_three, var_four)
 --
 # No extra indentation (same level of indent).
-# n/st
 if (this_is_one_thing and
-    that_is_another_thing):
+that_is_another_thing):
 --
 # Add some extra indentation on the conditional continuation line.
-# n
 if (this_is_one_thing
-        and that_is_another_thing):
+     and that_is_another_thing):
 --
 # The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct
-# n/cl
 my_list = [
     1, 2, 3,
-    4, 5, 6,
+  4, 5, 6,
 ]
 --
 # The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct
-# n/fs
 result = some_function_that_takes_arguments(
     'a', 'b', 'c',
-    'd', 'e', 'f',
+      'd', 'e', 'f',
 )
