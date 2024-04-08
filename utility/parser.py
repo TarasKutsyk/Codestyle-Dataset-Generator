@@ -10,7 +10,7 @@ def load_csv_to_dict(csv_fname):
 
         for row in csv_reader:
             if row:  # Ensure it's not an empty row
-                comment = row[1]
+                comment = row[0]
                 csv_dict[comment] = row
     return csv_dict
 
@@ -24,7 +24,7 @@ def get_buffer_name(label):
 def get_csv_name(label):
     return f'../dataset_{label}.csv'
 
-LABELS = {'correct', 'wrong'}
+LABELS = ['correct', 'wrong']
 
 items = []
 for label in LABELS:
@@ -36,6 +36,15 @@ for label in LABELS:
         items.append(lines)
 
 correct_items, wrong_items = items
+# print(correct_items)
+# print(wrong_items)
+# print('----------------------')
+# print()
+
+# for x, y in zip(correct_items, wrong_items):
+#     print('Correct:', x, sep='\n')
+#     print('Wrong:', y, sep='\n')
+
  # 1st validity check: the buffers must contain the same number of elements
 assert len(correct_items) == len(wrong_items), "The buffers must contain the same number of elements" 
 
@@ -68,13 +77,11 @@ for i in range(N_items):
     # Preprocess code snippets
     correct_code, wrong_code = '\n'.join(correct_code) ,'\n'.join(wrong_code)
 
-    new_row_id = hash(correct_comment)
-
     if not does_row_exist(correct_csv_dict, correct_comment):
         # Append the new row to the CSV file with correct samples
-        new_row = [new_row_id, correct_comment, correct_code, aspects, 'correct', 'False']
+        new_row = [correct_comment, correct_code, aspects, 'correct', 'False']
         correct_writer.writerow(new_row)
 
     if not does_row_exist(wrong_csv_dict, wrong_comment):
-        new_row = [new_row_id, wrong_comment, wrong_code, 'wrong', 'False']
+        new_row = [wrong_comment, wrong_code, 'wrong', 'False']
         wrong_writer.writerow(new_row)
