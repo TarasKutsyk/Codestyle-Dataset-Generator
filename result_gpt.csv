@@ -1,0 +1,538 @@
+"Aligned with opening delimiter.","process_data = analyze_metrics(input_value, baseline_data,
+                               growth_rate, yearly_output)
+","correct","True"
+"Aligned with opening delimiter.","draw = render_chart(x_axis_data, y_label,
+                    z_values, color_map)
+","correct","True"
+"Aligned with opening delimiter.","compute = calculate_results(parameter_a, benchmark,
+                            delta_points, extra_metrics)
+","correct","True"
+"Aligned with opening delimiter.","send = transmit_information(source_data, target_node,
+                            enabled_flags, connection_params)
+","correct","True"
+"Aligned with opening delimiter.","create = build_object(instance_id, factory_settings,
+                      model_type, configuration)
+","correct","True"
+"Aligned with opening delimiter.","display = show_graphics(frame_buffer, render_target,
+                        depth_blog, opts_quality)
+","correct","True"
+"Aligned with opening delimiter.","update = modify_entry(current_status, revision_number,
+                      field_to_change, update_payload)
+","correct","True"
+"Aligned with opening delimiter.","fetch = retrieve_record(search_key, directory_path,
+                        access_time, encryption_type)
+","correct","True"
+"Aligned with opening delimiter.","configure = setup_system(primary_input, secondary_source,
+                         feedback_loop, system_flags)
+","correct","True"
+"Aligned with opening delimiter.","encrypt = secure_content(public_key, private_sector,
+                         algorithm_type, padding_info)
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def calculate_area(
+        length, width, height,
+        depth):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def process_data(
+        input_value, output_value, ratio,
+        factor):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def create_user(
+        username, email, password,
+        phone_number):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def draw_shape(
+        corner, side_length, color,
+        texture, opacity):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def send_message(
+        sender, receiver, content,
+        date_time, priority):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def connect_devices(
+        primary_device, secondary_device, method,
+        protocol, bandwidth):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def configure_system(
+        user_config, system_config, environment,
+        access_level):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def analyze_performance(
+        metric_one, metric_two, baseline,
+        target, variance):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def start_engine(
+        ignition_key, fuel_level, oil_pressure,
+        engine_temp, status_code):
+","correct","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def record_action(
+        action_id, user_id, timestamp,
+        session_length, event_type):","correct","True"
+"Hanging indents should add a level.","data = process_data(
+    input_vals, configuration,
+    parameters, options_set)
+","correct","True"
+"Hanging indents should add a level.","record = save_entry(
+    record_id, data_object,
+    metadata, timestamp)
+","correct","True"
+"Hanging indents should add a level.","result = evaluate_performance(
+    matrix, vector,
+    coefs, bias)
+","correct","True"
+"Hanging indents should add a level.","info = extract_information(
+    source, destination,
+    route_map, time_frame)
+","correct","True"
+"Hanging indents should add a level.","person = update_profile(
+    user_id, account_data,
+    settings, history_log)
+","correct","True"
+"Hanging indents should add a level.","calc = calculate_result(
+    operand_one, operand_two,
+    aux_data, extra_params)
+","correct","True"
+"Hanging indents should add a level.","draw = render_image(
+    canvas, shape_info,
+    color_map, depth_field)
+","correct","True"
+"Hanging indents should add a level.","content = parse_document(
+    header_data, body_content,
+    footer_info, doc_style)
+","correct","True"
+"Hanging indents should add a level.","setup = configure_system(
+    main_config, backup_plan,
+    user_prefs, opt_mode)
+","correct","True"
+"Hanging indents should add a level.","merge = combine_records(
+    primary_rec, secondary_rec,
+    merge_strategy, field_mapping)","correct","True"
+"No extra indentation (same level of indent).","if (item_valid and
+    list_complete):
+","correct","True"
+"No extra indentation (same level of indent).","if (user_active and
+    profile_filled):
+","correct","True"
+"No extra indentation (same level of indent).","if (game_started and
+    level_reached):
+","correct","True"
+"No extra indentation (same level of indent).","if (files_exist and
+    permission_granted):
+","correct","True"
+"No extra indentation (same level of indent).","if (connection_established and
+    signal_strong):
+","correct","True"
+"No extra indentation (same level of indent).","if (sun_shining and
+    birds_chirping):
+","correct","True"
+"No extra indentation (same level of indent).","if (data_loaded and
+    no_errors_found):
+","correct","True"
+"No extra indentation (same level of indent).","if (engine_running and
+    oil_checked):
+","correct","True"
+"No extra indentation (same level of indent).","if (doors_closed and
+    lights_on):
+","correct","True"
+"No extra indentation (same level of indent).","if (fridge_full and
+    milk_cold):","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (item_is_available
+        and cart_is_not_full):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (user_is_authenticated
+        and access_is_granted):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (file_exists
+        and not file_is_corrupted):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (connection_is_secure
+        and received_data_is_valid):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (order_is_processed
+        and payment_is_complete):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (day_is_sunny
+        and park_is_open):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (license_is_active
+        and user_is_compliant):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (memory_is_sufficient
+        and disk_space_is_enough):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (temperature_is_optimal
+        and humidity_is_within_range):
+","correct","True"
+"Add some extra indentation on the conditional continuation line.","if (app_is_installed
+        and service_is_running):
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","ages_tuple = (
+    45, 34, 23,
+    32, 52, 67,
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","color_dict = {
+    'red': 1, 'blue': 2,
+    'green': 3, 'yellow': 4,
+}
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","coords_list = [
+    (1, 2), (3, 4),
+    (5, 6), (7, 8),
+]
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","inventory_dict = {
+    'apples': 120, 'oranges': 80,
+    'bananas': 150, 'grapes': 90,
+}
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","scores_tuple = (
+    76, 89, 92,
+    85, 72, 88,
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","user_ids = [
+    101, 102, 103,
+    104, 105, 106,
+]
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","price_list = [
+    2.99, 5.49, 1.89,
+    9.99, 0.99, 7.49,
+]
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","status_codes = {
+    200: 'Success', 404: 'Not Found',
+    500: 'Server Error', 302: 'Redirect',
+}
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","shapes_tuple = (
+    'circle', 'square', 'triangle',
+    'rectangle', 'pentagon',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","months = [
+    'January', 'February', 'March',
+    'April', 'May', 'June',
+]","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","output = calculate_sum(
+    'one', 'two', 'three',
+    'four', 'five', 'six',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","data = fetch_records(
+    'id', 'info', 'type',
+    'date', 'status', 'source',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","response = handle_request(
+    'user', 'email', 'password',
+    'session', 'auth', 'profile',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","config = set_configuration(
+    'mode', 'state', 'level',
+    'type', 'zone', 'setting',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","values = compute_totals(
+    'item', 'cost', 'count',
+    'tax', 'total', 'net',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","details = get_information(
+    'part', 'batch', 'code',
+    'size', 'label', 'rule',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","result = process_input(
+    'char', 'code', 'symbol',
+    'format', 'style', 'flow',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","readings = collect_data(
+    'temp', 'press', 'humid',
+    'speed', 'point', 'value',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","status = check_system(
+    'check', 'alert', 'collect',
+    'manage', 'status', 'config',
+)
+","correct","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","notes = gather_feedback(
+    'rate', 'review', 'comment',
+    'user', 'quality', 'score',
+)","correct","True"
+"Aligned with opening delimiter.","foo = calculate_summary(data_input, param_first,
+param_second, long_parameter)
+","wrong","True"
+"Aligned with opening delimiter.","calculate = massive_function(compute_base, extended_arg,
+height_param, very_big_argument)
+","wrong","True"
+"Aligned with opening delimiter.","result = process_entries(entry_one, data_second,
+    data_third, another_arg)
+","wrong","True"
+"Aligned with opening delimiter.","value = integrate_values(variable_x, short_var,
+                        midpoint, border_case_var)
+","wrong","True"
+"Aligned with opening delimiter.","response = send_request(request_data, metadata,
+                  details, extended_info)
+","wrong","True"
+"Aligned with opening delimiter.","example = run_simulation(sim_variable, environment_set,
+       config_details, parameters_lengthy)
+","wrong","True"
+"Aligned with opening delimiter.","compute = evaluate_metrics(metric_input, baseline_value,
+            custom_setting, additional_adjustment)
+","wrong","True"
+"Aligned with opening delimiter.","analysis = create_report(report_item, source_identifier,
+                 user_details, context_informations)
+","wrong","True"
+"Aligned with opening delimiter.","view = render_template(template_name, context_object,
+context_detail, long_context_information)
+","wrong","True"
+"Aligned with opening delimiter.","fetch = get_records(primary_key, record_field,
+                  secondary_field, optional_field_long)","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def process_data(
+        input_data, output_data,
+            processed_data, result_data):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def calculate_values(
+       value1, value2, 
+           value3, long_value4):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def create_user_profile(
+         firstname, lastname,
+        username, password, email):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def connect_database(
+        host, port, 
+     dbname, user, password):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def draw_shape(
+        center_point, edge_length, 
+            number_of_sides, color):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def send_email(
+         recipient, sender, 
+        subject, body, cc, bcc):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def start_engine(
+         model, make, 
+           year, horsepower):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def mix_ingredients(
+        dry, wet, 
+            flavoring, toppings):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def upload_document(
+        file_path,
+            metadata, destination_folder):
+","wrong","True"
+"Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def add_numbers(
+        num1, num2, 
+    num3, very_long_number_name):","wrong","True"
+"Hanging indents should add a level.","resultA = calculate_maximum_result(
+valueX, valueY, 
+valueZ, anOptionalFlag)
+","wrong","True"
+"Hanging indents should add a level.","compute_values = parse_data_through_network(
+   dataInput, networkStatus, 
+outputLocation, lastAccessTime)
+","wrong","True"
+"Hanging indents should add a level.","minimum_find = get_minimum_value(
+aParameter, bParameter, cParameter,
+dParameter)
+","wrong","True"
+"Hanging indents should add a level.","analyze_data = start_data_analysis(
+inputSet1, inputSet2,
+  controlValue, experimentValue)
+","wrong","True"
+"Hanging indents should add a level.","match_patterns = pattern_recognition_algorithm(
+    pattern1, pattern2, pattern3,
+pattern4)
+","wrong","True"
+"Hanging indents should add a level.","extract_features = feature_extraction_method(
+testInput, processStatus,
+          resultOutput, flagsUsed)
+","wrong","True"
+"Hanging indents should add a level.","launch_simulation = init_simulation_config(
+configParam, simDetail, ongoingStatus, finalResult)
+","wrong","True"
+"Hanging indents should add a level.","calculate_statistics = generate_stats(
+stat_input_one, stat_input_two, 
+    stat_input_three, finalStat)
+","wrong","True"
+"Hanging indents should add a level.","init_process = load_process_env(
+       environmentVars, userConfigs, 
+systemSettings, loadBalancer)
+","wrong","True"
+"Hanging indents should add a level.","merge_datasets = combine_datasets_function(
+    datasetOne, datasetTwo,
+              metadataInfo, mergeOptions)
+--","wrong","True"
+"No extra indentation (same level of indent).","if (check_one_condition and
+ check_other_condition):
+","wrong","True"
+"No extra indentation (same level of indent).","if (is_valid_entry and
+   is_not_duplicate_entry):
+","wrong","True"
+"No extra indentation (same level of indent).","if (user_active and
+user_has_permissions):
+","wrong","True"
+"No extra indentation (same level of indent).","if (validate_input(data) and
+     ensure_data_security(data)):
+","wrong","True"
+"No extra indentation (same level of indent).","if (data_is_ready and
+		process_data_now()):
+","wrong","True"
+"No extra indentation (same level of indent).","if (can_proceed() and
+     is_safe_operation()):
+","wrong","True"
+"No extra indentation (same level of indent).","if (model_is_trained and
+			  generate_predictions()):
+","wrong","True"
+"No extra indentation (same level of indent).","if (send_data_available and
+	send_data()):
+","wrong","True"
+"No extra indentation (same level of indent).","if (data_clean and
+		        pass_checks()):
+","wrong","True"
+"No extra indentation (same level of indent).","if (user_authenticated and
+			user_not_restricted()):","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (check_this_value
+     and compare_with_that):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (item_is_available
+and quantity_is_sufficient):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (user_is_active
+  and account_is_verified):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (x < y
+and x > 0):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (valid_response
+       and contains_required_data):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (received_signal
+and is_within_range):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (window_is_open
+     and door_is_locked):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (has_all_permissions
+and not is_restricted):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (variable_one
+   and variable_two):
+","wrong","True"
+"Add some extra indentation on the conditional continuation line.","if (data_is_loaded
+and data_is_valid):","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","config_settings = {
+    'setting1': True,
+      'setting2': False,
+  }
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","user_ids = [
+    101, 102, 103,
+   104, 105, 106,
+        ]
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","fruit_basket = [
+     'apple', 'banana', 'cherry',
+    'date', 'elderberry', 'fig']
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","scores = {
+  'Alice': 88, 'Bob': 92,
+    'Charlie': 85,
+  }
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","process_data = (
+    300, 450,
+  675,
+        )
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","employee_info = {
+    'Name': 'John',
+    'Age': 30,
+    'Department': 'HR',
+        }
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","names_list = [
+    'Sarah', 'Lora',
+     'Michael', 'Tom',
+]
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","event_days = {
+    'Monday': ['Lecture', 'Seminar'],
+    'Tuesday': ['Workshop'],
+        }
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","object_types = (
+    int, float, str,
+    dict, list, tuple,
+                )
+
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (collection case)","parameter_ranges = {
+    'param1': [1, 20],
+  'param2': [30, 60],
+    'param3': [70, 100],
+  }","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","calculation = calculate_total_sum(
+    123, 456, 789,
+     101112, 131415, 161718,
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","output = fetch_data_records(
+    ""alpha"", ""beta"", ""gamma"",
+   ""delta"", ""epsilon"", ""zeta"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","response = process_user_input(
+    ""username"", ""password"", ""email"",
+      ""dob"", ""city"", ""country"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","final_score = compute_scores(
+    ""math"", ""science"", ""literature"",
+            ""history"", ""geography"", ""arts"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","transformed_data = transform_data_set(
+    ""input"", ""output"", ""temp"",
+  ""intermediate"", ""final"", ""result"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","metadata = extract_metadata_from(
+    'title', 'author', 'publisher',
+   'year', 'ISBN', 'genre',
+      )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","connection_details = get_connection_params(
+    ""host"", ""port"", ""database"",
+  ""user"", ""password"", ""options"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","content = load_website_content(
+    ""url"", ""timeout"", ""user_agent"",
+  ""headers"", ""cookies"", ""proxy"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","record = create_db_record(
+    ""first_name"", ""last_name"", ""email"",
+     ""age"", ""occupation"", ""nationality"",
+    )
+","wrong","True"
+"The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","result = query_database(
+    'table', 'columns', 'conditions',
+      'group_by', 'order_by', 'limit',
+    )","wrong","True"

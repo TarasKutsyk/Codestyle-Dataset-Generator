@@ -2,3 +2,8 @@
 edit_results.html
 edit_results.ipynb
 .ipynb_checkpoints/edit_results-checkpoint.ipynb
+llama3_generate.ipynb
+llama3_prompt.py
+.ipynb_checkpoints/llama_local-checkpoint.ipynb
+.ipynb_checkpoints/llama_promptp-checkpoint.ipynb
+__pycache__/llama_prompt.cpython-312.pyc
