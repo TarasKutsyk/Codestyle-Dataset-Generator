@@ -506,7 +506,8 @@ and data_is_valid):","wrong","True"
 "The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","result = query_database(
     'table', 'columns', 'conditions',
       'group_by', 'order_by', 'limit',
-    )","wrong","True""Aligned with opening delimiter.","calculate_sum(val_a, val_b,
+    )","wrong","True"
+"Aligned with opening delimiter.","calculate_sum(val_a, val_b,
               val_c)
 ","correct","True"
 "Aligned with opening delimiter.","process_data(dataItem, configFile,
