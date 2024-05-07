@@ -1,33 +1,4 @@
-"Aligned with opening delimiter.","process_data = analyze_metrics(input_value, baseline_data,
-                               growth_rate, yearly_output)
-","correct","True"
-"Aligned with opening delimiter.","draw = render_chart(x_axis_data, y_label,
-                    z_values, color_map)
-","correct","True"
-"Aligned with opening delimiter.","compute = calculate_results(parameter_a, benchmark,
-                            delta_points, extra_metrics)
-","correct","True"
-"Aligned with opening delimiter.","send = transmit_information(source_data, target_node,
-                            enabled_flags, connection_params)
-","correct","True"
-"Aligned with opening delimiter.","create = build_object(instance_id, factory_settings,
-                      model_type, configuration)
-","correct","True"
-"Aligned with opening delimiter.","display = show_graphics(frame_buffer, render_target,
-                        depth_blog, opts_quality)
-","correct","True"
-"Aligned with opening delimiter.","update = modify_entry(current_status, revision_number,
-                      field_to_change, update_payload)
-","correct","True"
-"Aligned with opening delimiter.","fetch = retrieve_record(search_key, directory_path,
-                        access_time, encryption_type)
-","correct","True"
-"Aligned with opening delimiter.","configure = setup_system(primary_input, secondary_source,
-                         feedback_loop, system_flags)
-","correct","True"
-"Aligned with opening delimiter.","encrypt = secure_content(public_key, private_sector,
-                         algorithm_type, padding_info)
-","correct","True"
+"style","code","label","processed"
 "Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def calculate_area(
         length, width, height,
         depth):
@@ -535,4 +506,31 @@ and data_is_valid):","wrong","True"
 "The closing brace/bracket/parenthesis on multiline constructs must be lined up under the first character of the line that starts the multiline construct (function call case)","result = query_database(
     'table', 'columns', 'conditions',
       'group_by', 'order_by', 'limit',
-    )","wrong","True"
+    )","wrong","True""Aligned with opening delimiter.","calculate_sum(val_a, val_b,
+              val_c)
+","correct","True"
+"Aligned with opening delimiter.","process_data(dataItem, configFile,
+             envSettings, userPrefs)
+","correct","True"
+"Aligned with opening delimiter.","transform_values(x, y,
+                 z, w, t)
+","correct","True"
+"Aligned with opening delimiter.","set_parameters(paramX, paramY,
+               paramZ)","correct","True"
+"Aligned with opening delimiter.","initialize_config(config, environment,
+                  user, session_id)
+","correct","True"
+"Aligned with opening delimiter.","connect_database(databaseUri, credentials,
+                 timeout)
+","correct","True"
+"Aligned with opening delimiter.","extract_features(feature, detailLevel,
+                 extractionMethod)
+","correct","True"
+"Aligned with opening delimiter.","create_user(username, password,
+            email, firstName, lastName)
+","correct","True"
+"Aligned with opening delimiter.","update_record(recordID, newData,
+              oldData)
+","correct","True"
+"Aligned with opening delimiter.","submit_query(queryText, connectionDetails,
+             options)","correct","True"

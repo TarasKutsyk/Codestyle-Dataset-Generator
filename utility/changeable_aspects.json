@@ -1,6 +1,6 @@
 {
     "function signature": [ 
-        "number of function arguments",
+        "number of function arguments (all functions must take a different number of arguments)",
         "names of function arguments",
         "length of function arguments (all arguments must be of different length)"
     ],
