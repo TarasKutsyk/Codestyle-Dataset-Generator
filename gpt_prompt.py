@@ -3,7 +3,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 from utility.changeable_aspects import get_aspects
-from utility.claude_prompts import RESTRICTED_PROMPT_CORRECT as PROMPT_CORRECT, PROMPT_WRONG, PROMPT_REGENERATE_CORRECT
+from utility.claude_prompts import RESTRICTED_PROMPT_CORRECT as PROMPT_CORRECT, PROMPT_WRONG, PROMPT_REGENERATE_CORRECT, PROMPT_REGENERATE_WRONG
 
 load_dotenv()
 
@@ -53,6 +53,16 @@ class GPTClient:
 
         prompt_text = PROMPT_REGENERATE_CORRECT.format(wrong_snippets=wrong_snippets_str,
                                                        wrong_snippets_count=len(wrong_snippets_list))
+        if verbose:
+            self._print_chat(prompt_text)
+
+        return self._get_response(prompt_text, **kwargs)
+    
+    def regenerate_wrong_samples(self, wrong_snippets_list: list[str], verbose=True, **kwargs):
+        wrong_snippets_str = '\n--\n'.join(wrong_snippets_list)
+
+        prompt_text = PROMPT_REGENERATE_WRONG.format(wrong_snippets=wrong_snippets_str,
+                                                     wrong_snippets_count=len(wrong_snippets_list))
         if verbose:
             self._print_chat(prompt_text)
 

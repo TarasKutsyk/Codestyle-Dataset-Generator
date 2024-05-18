@@ -90,10 +90,14 @@ You will be given an example of a stylistically *wrong* snippet, and your task i
 
 <instructions>
 1. Snippets are valid pieces of Python code that must be similar to the provided <wrong_snippet> example in a sense that they *must violate* a certain <style_rule> (all relevant data are provided to you below in the corresponding XML sections).
-2. When generating similar wrong snippets, you may and should change the <wrong_snippet> example in all possible ways, except for one main rule:
-3. Snippets must not be identical to the <correct_snippet> in the <style_rule>.
-4. Since you will generate snippets for a ML dataset, they must have some variability, being different both from the provided examples and from each other. To provide this variability, you need to modify the provided example in the aspects from the <other_aspects> section. If some aspects from <other_aspects> are irrelevant to the provided examples, you can safely ignore them, and focus on relevant ones instead.
-5. Pay special attention to identation: some <style_rule>s rely on a specific, fixed number of spaces in each new line of code, so pay close attention not to keep the identation identical to the one provided in the <correct_snippet> example, if this is what style rule requires.
+2. Snippets will be part of a ML dataset, so they must have some variability, being different both from the provided examples and from each other. To provide this variability, you need to modify the provided examples in the aspects from the <other_aspects> section. If some aspects from <other_aspects> are irrelevant to the provided examples, you can safely ignore them, and focus on relevant ones instead.
+3. When generating similar wrong snippets, modifying the provided examples in all the <other_aspects> as described in the previous instruction, you must remember one main rule:
+4. Snippets must not be identical to the <correct_snippet> in the <style_rule>.
+
+Summarizing, there are two ways in which you can generate a wrong snippet:
+- modifying a <correct_snippet> example by breaking its <style_rule> + applying additional pertrubations in <other_aspects>
+- modifying a <wrong_snippet> example where the <style_rule> is already broken + applying additional pertrubations in <other_aspects>
+But in either way, you must ensure that the generated snippet *does not follow* the <style_rule> as the <correct_snippet> does.
 </instructions>
 
 <style_rule>
@@ -114,7 +118,9 @@ You will be given an example of a stylistically *wrong* snippet, and your task i
 
 <output_instruction>
 1. By comparing the <correct_snippet> and <wrong_snippet>, start your output with defining all possible ways in which you can violate the <style_rule>. Use all your experience of code reviewing to list out all the cases, in which inexperienced programmers could violate the rule, and enclose these cases into the <violate_instructions> tags.
-2. Paying close attention in order *not to generate the correct sample* as in in the <correct_snippet> example, and using <violate_instructions> you just wrote, start generating stylistically wrong snippets that violate the <style_rule>. Each case from the <violate_instructions> should be covered by at least one generated snippet.
+2. Paying close attention in order *not to generate the correct sample* as in in the <correct_snippet> example, and using <other_aspects> and <violate_instructions> you just wrote, start generating stylistically wrong snippets that violate the <style_rule>.
+- Each case from the <violate_instructions> must be covered by at least one generated snippet.
+- Each generated snippet must be different in each <other_aspect> from other snippets.
 3. Generate your snippets (only code, without comments) in the following format:
     <result>
     {{code_snippet_1}}
@@ -142,7 +148,25 @@ Use the same format to output the corrected snippets (only snippets of code, wit
 <result>
 {{corrected_snippet_1}}
 --
-{{corrected_snippet_2}}
+...
+--
+{{corrected_snippet_{wrong_snippets_count}}}
+</result>
+"""
+
+PROMPT_REGENERATE_WRONG = """
+There's a problem with the following snippets you generated:
+<wrong_snippets>
+{wrong_snippets}
+</wrong_snippets>
+
+Now you must correct these snippets, ensuring that all the requirements are met:
+1. Snippets absolutely have to violate the <style_rule> you were provided with, implementing one of the violations from <violate_instructions>.
+2. Snippets have to be different from the provided examples in all relevant <other_aspects>.
+
+Use the same format to output the corrected snippets (only snippets of code, without comments):
+<result>
+{{corrected_snippet_1}}
 --
 ...
 --

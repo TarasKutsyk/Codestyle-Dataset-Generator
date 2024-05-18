@@ -234,35 +234,6 @@
     'rate', 'review', 'comment',
     'user', 'quality', 'score',
 )","correct","True"
-"Aligned with opening delimiter.","foo = calculate_summary(data_input, param_first,
-param_second, long_parameter)
-","wrong","True"
-"Aligned with opening delimiter.","calculate = massive_function(compute_base, extended_arg,
-height_param, very_big_argument)
-","wrong","True"
-"Aligned with opening delimiter.","result = process_entries(entry_one, data_second,
-    data_third, another_arg)
-","wrong","True"
-"Aligned with opening delimiter.","value = integrate_values(variable_x, short_var,
-                        midpoint, border_case_var)
-","wrong","True"
-"Aligned with opening delimiter.","response = send_request(request_data, metadata,
-                  details, extended_info)
-","wrong","True"
-"Aligned with opening delimiter.","example = run_simulation(sim_variable, environment_set,
-       config_details, parameters_lengthy)
-","wrong","True"
-"Aligned with opening delimiter.","compute = evaluate_metrics(metric_input, baseline_value,
-            custom_setting, additional_adjustment)
-","wrong","True"
-"Aligned with opening delimiter.","analysis = create_report(report_item, source_identifier,
-                 user_details, context_informations)
-","wrong","True"
-"Aligned with opening delimiter.","view = render_template(template_name, context_object,
-context_detail, long_context_information)
-","wrong","True"
-"Aligned with opening delimiter.","fetch = get_records(primary_key, record_field,
-                  secondary_field, optional_field_long)","wrong","True"
 "Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.","def process_data(
         input_data, output_data,
             processed_data, result_data):
@@ -535,3 +506,33 @@ and data_is_valid):","wrong","True"
 ","correct","True"
 "Aligned with opening delimiter.","submit_query(queryText, connectionDetails,
              options)","correct","True"
+"Aligned with opening delimiter.","bar = alternate_function(more_arg1, more_a2rg,
+
+                        arg3, ar4)
+","wrong","True"
+"Aligned with opening delimiter.","data = random_function_name(
+        long_parameter1, xp, sys_arg, env_data, auth_code)
+","wrong","True"
+"Aligned with opening delimiter.","result = helper_tool(first_param, 
+                       second_param, 
+                       third_param, fourth_param)
+","wrong","True"
+"Aligned with opening delimiter.","value = complex_calculation(a1, a23, data_is_4m,
+                             additional_param)","wrong","True"
+"Aligned with opening delimiter.","config = longer_function_name(first_input, 
+                       second_input, third, fourth_input_param, fifth_input_param)
+","wrong","True"
+"Aligned with opening delimiter.","x = processed_data(item1, 
+    another2, last_param)
+","wrong","True"
+"Aligned with opening delimiter.","calc = analyze_data(long_var1, long_var2,
+        med_var, shrt, final_var)
+","wrong","True"
+"Aligned with opening delimiter.","greet = message_preparation(name, designation,
+       greeting_line)
+","wrong","True"
+"Aligned with opening delimiter.","response = api_request(param_one, param_two,
+                    param_three)
+","wrong","True"
+"Aligned with opening delimiter.","values = compute_sum(one, 
+                 second, three, final_val)","wrong","True"
