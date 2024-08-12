@@ -6,24 +6,30 @@
     ],
     "naming": [
         "variable naming",
-        "function naming"
+        "function naming",
+        "file naming (if appropriate)"
+    ],
+    "string": [
+        "String literal value"
     ],
     "expressions": [
-        "names of the operands (variables used in an expression)",
+        "literal values used in the expression",
+        "names of the operands (variables used in the expression)",
         "number of operands",
-        "operators: either logical or arithmetic operators, depending on what the example uses"
+        "operators: different logical or arithmetic operators, depending on what the example uses"
     ],
     "collections": [
         "type of a collection data structure used (list/tuple/dictionary)"
     ],
     "module": [
-        "module naming"
+        "module naming",
+        "number of modules imported"
     ],
     "types": [
         "type name used in a type annotation"
     ],
     "exceptions": [
-        "type of an exception thrown"
+        "type of an exception thrown (rewrite the code in the expression blocks accordingly)"
     ],
     "statement": [
         "type of a control flow statement (if/while)"

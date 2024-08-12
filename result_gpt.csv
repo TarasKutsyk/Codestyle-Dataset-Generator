@@ -536,3 +536,2033 @@ and data_is_valid):","wrong","True"
 ","wrong","True"
 "Aligned with opening delimiter.","values = compute_sum(one, 
                  second, three, final_val)","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/data/logs/input.log') as log_input, \
+     open('/data/logs/output.log', 'w') as log_output:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/users/john/docs/readme.txt') as doc_read, \
+     open('/users/john/docs/write.txt', 'w') as doc_write:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/config/settings.ini') as settings_source, \
+     open('/config/new_settings.ini', 'w') as settings_destination:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/var/data/export.csv') as csv_export, \
+     open('/var/data/import.csv', 'w') as csv_import:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/home/sarah/music/playlist.m3u') as playlist, \
+     open('/home/sarah/music/new_playlist.m3u', 'w') as new_playlist:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/archive/2023/report_jan.pdf') as report_jan, \
+     open('/archive/2023/summary_jan.txt', 'w') as summary_jan:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/tmp/session.old') as old_session, \
+     open('/tmp/session.new', 'w') as new_session:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/usr/bin/local/config.yaml') as config_file, \
+     open('/usr/bin/local/config_bak.yaml', 'w') as backup_config:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/etc/hosts') as hosts_file, \
+     open('/etc/hosts.bak', 'w') as backup_hosts:
+","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/logs/server1.log') as server_log, \
+     open('/logs/analysis1.txt', 'w') as analysis_document:","correct","True"
+"Imports should usually be on separate lines:","import math
+import random
+","correct","True"
+"Imports should usually be on separate lines:","import json
+","correct","True"
+"Imports should usually be on separate lines:","import time
+import re
+import csv
+","correct","True"
+"Imports should usually be on separate lines:","import datetime
+import urllib.request
+","correct","True"
+"Imports should usually be on separate lines:","import collections
+import heapq
+import zlib
+","correct","True"
+"Imports should usually be on separate lines:","import socket
+import threading
+","correct","True"
+"Imports should usually be on separate lines:","import asyncio
+import pathlib
+","correct","True"
+"Imports should usually be on separate lines:","import numpy
+","correct","True"
+"Imports should usually be on separate lines:","import requests
+import pandas as pd
+","correct","True"
+"Imports should usually be on separate lines:","python tempfile
+import logging
+import argparse","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Description of the module operations.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['x', 'y', 'z']
+__version__ = '1.0'
+__author__ = 'Jane Doe'
+
+import os
+import datetime
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Data manipulation and utilities module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['item1', 'item2', 'item3']
+__version__ = '2.1'
+__author__ = 'John Smith'
+
+import sys
+import json
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""API connectors and helpers module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['connect', 'fetch', 'parse']
+__version__ = '0.3'
+__author__ = 'Alice Wonderland'
+
+import re
+import urllib.request
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Utility functions for processing data.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['load', 'save', 'update']
+__version__ = '1.2'
+__author__ = 'Bob Builder'
+
+import math
+import logging
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Module for handling file I/O operations.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['read', 'write', 'append']
+__version__ = '0.9'
+__author__ = 'Clark Kent'
+
+import csv
+import os
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Networking utilities module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['send', 'receive', 'config']
+__version__ = '1.5'
+__author__ = 'Bruce Wayne'
+
+import socket
+import sys
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Database interface module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['insert', 'query', 'delete']
+__version__ = '2.0'
+__author__ = 'Peter Parker'
+
+import sqlite3
+import os
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Graphics rendering and manipulation functions.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['draw', 'erase', 'resize']
+__version__ = '0.7'
+__author__ = 'Tony Stark'
+
+import PIL
+import numpy
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Statistical computations module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['mean', 'median', 'mode']
+__version__ = '1.1'
+__author__ = 'Sherlock Holmes'
+
+import statistics
+import os
+","correct","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""Web scraping utilities module.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+__all__ = ['crawl', 'scrape', 'parse']
+__version__ = '1.3'
+__author__ = 'Robin Hood'
+
+import bs4
+import requests
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","moveData(data[3], {result: 1})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","fetch(values[7], {output: 5})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","upload(info[2], {status: 4})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","send(image[5], {key: 3})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","capture(frame[4], {node: 7})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","deploy(config[8], {flag: 2})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","assign(setting[1], {count: 6})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","load(docs[6], {alpha: 9})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","pull(texts[0], {beta: 8})
+","correct","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","push(numbers[9], {gamma: 10})","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if a == 5: print(a, b); a, b = b, a
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if count != 10: print(total, count); total, count = count, total
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while num < 20: print(current, num); current, num = num, current
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if score > 100: print(score, max); score, max = max, score
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while points <= 200: print(points, result); points, result = result, points
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if temp >= 30: print(temp, readings); temp, readings = readings, temp
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if value == 50: print(value, number); value, number = number, value
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while height != 150: print(height, measurement); height, measurement = measurement, height
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if speed > 60: print(car, speed); car, speed = speed, car
+","correct","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if length <= 5: print(piece, length); piece, length = length, piece","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","fruits[3 : 7]
+fruits[0 : 10 : 2], fruits[:10:2], fruits[0::2], fruits[0:10:], fruits[:]
+fruits[start:finish], fruits[start:finish:], fruits[start::increment]
+fruits[start + margin : finish + margin]
+fruits[: end_func(y) : step_func(y)], fruits[:: step_func(y)]
+fruits[start - margin : finish - margin]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","data[5 : 15]
+data[2 : 22 : 4], data[:22:4], data[2::4], data[2:22:], data[:]
+data[begin:end], data[begin:end:], data[begin::delta]
+data[begin + shift : end + shift]
+data[: max_func(z) : pace_func(z)], data[:: pace_func(z)]
+data[begin - shift : end - shift]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","samples[2 : 8]
+samples[4 - adjustment : 10 - adjustment], samples[4 - adjustment : 10 - adjustment : 2 + pace]
+samples[: high(x) : expand(x)], samples[:: expand(x)]
+samples[2 + adjustment : 8 + adjustment]
+samples[start_val:end_val], samples[start_val:end_val:], samples[start_val::gap]
+samples[2 * rate : 8 * rate], samples[2 * rate : 8 * rate : factor]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","ingredients[1 : 9], ingredients[1:9:3], ingredients[:9:3], ingredients[1::3], ingredients[1:9:]
+ingredients[min: max], ingredients[min: max:], ingredients[min:: step]
+ingredients[min + advance : max + advance]
+ingredients[: max_compute(w) : move_compute(w)], ingredients[:: move_compute(w)]
+ingredients[min - advance : max - advance]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","items[10 : 20 : 2], items[10 : 20], items[10::4], items[10:20:], items[:20:2]
+items[low:high], items[low:high:], items[low::increase]
+items[low + push : high + push]
+items[: top_adjust(u) : climb_adjust(u)], items[:: climb_adjust(u)]
+items[low - push : high - push]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","elements[5 : 10], elements[5:10:2], elements[:10:2], elements[5::2], elements[5:10:]
+elements[front:back], elements[front:back:], elements[front::step_up]
+elements[front + gap : back + gap]
+elements[: backend_func(v) : stepup_func(v)], elements[:: stepup_func(v)]
+elements[front - gap : back - gap]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","contents[8 : 16], contents[8:16:4], contents[:16:2], contents[8::4], contents[8:16:]
+contents[start_point:end_point], contents[start_point:end_point:], contents[start_point::stride]
+contents[start_point + offset : end_point + offset]
+contents[: end_fn(s) : step_fn(s)], contents[:: step_fn(s)]
+contents[start_point - offset : end_point - offset]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","material[12 : 24], material[12:24:6], material[:24:3], material[12::6], material[12:24:]
+material[minimum:maximum], material[minimum:maximum:], material[minimum::increment]
+material[minimum + addition : maximum + addition]
+material[: max_function(t) : increase_function(t)], material[:: increase_function(t)]
+material[minimum - addition : maximum - addition]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","particles[3 : 6], particles[3:6:1], particles[:6:1], particles[3::1], particles[3:6:]
+particles[low_limit:upper_limit], particles[low_limit:upper_limit:], particles[low_limit::jump]
+particles[low_limit + shift : upper_limit + shift]
+particles[: upper_limit_fn(k) : step_limit_fn(k)], particles[:: step_limit_fn(k)]
+particles[low_limit - shift : upper_limit - shift]
+","correct","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","stages[1 : 4], stages[1:4:1], stages[:4:1], stages[1::1], stages[1:4:]
+stages[first:last], stages[first:last:], stages[first::incremental]
+stages[first + growth : last + growth]
+stages[: last_fn(p) : increase_fn(p)], stages[:: increase_fn(p)]
+stages[first - growth : last - growth]","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","launch(42)
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","execute(3, ""example"")
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","start(""data"", 1024)
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","trigger(a=5, b=2)
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","deploy(7, config=""configurations"", debug=True)
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","initialize(""single_argument"")
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","activate(x, y=8, z=19)
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","compute(""long_argument_name_for_clarity"")
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","process(value=34, checkpoint=""check123"")
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","optimize(""very_short"", 434, settings=None)","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","nums[4] = primes[3]
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","info['user'] = data['id']
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","age_list[9] = senior[1]
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","colors['red'] = palette['bright']
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","temperature[day] = forecast[7]
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","grades[2] = scores[5]
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","investments['AAPL'] = stockValues['APPL']
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","register['Alice'] = login['AliceID']
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","events['webinar'] = schedule['Monday']
+","correct","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","months[0] = calendar[1]","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","a = 4
+b = 5
+my_var = 6
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","height = 10
+width = 20
+area = 30
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","alpha = 7
+beta = 8
+gamma = 9
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","score = 15
+max_score = 30
+min_score = 10
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","length = 23
+breadth = 42
+perimeter = 64
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","temp = 37
+humidity = 45
+pressure = 1013
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","red = 255
+green = 128
+blue = 64
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","apple = 1
+banana = 2
+cherry = 3
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","x_coord = 100
+y_coord = 200
+z_coord = 300
+","correct","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","speed = 60
+distance = 120
+time = 2","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","counter = counter - 1
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","total_sum -= 2
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","value = value / 2 + 3
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","dist_square = xx*xx + yy*yy
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","d = (m + n) - (m - n)
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","count = count * 2 + 10
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","balance += 5
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","height = height / 2 - 3
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","hypotenuse = xx*xx - yy*yy
+","correct","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","diff = (p + q) / (p - q)","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def process(data: str) -> int:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def transform(value: int) -> float:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def analyze(results: List[int]) -> bool:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def compute(metrics: Dict[Any, Any]) -> Tuple[str, int]:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def evaluate(input_data: List[str]) -> List[str]:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def summarize(details: Dict[str, Any]) -> str:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def handle(request: bytes) -> bool:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def convert(value: Union[str, bytes]) -> str:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def navigate(values: List[Any]) -> float:
+","correct","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def validate(input_string: str) -> bool:","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def add_numbers(a, b=5):
+    return calculate_sum(x=a, y=b)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def multiply_coefficients(coeff1, coeff2=2):
+    return product(c=coeff1, d=coeff2)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def greet_user(firstname, lastname='Doe'):
+    return create_greeting(first=firstname, last=lastname)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def convert_temperature(degree, unit='C'):
+    return temperature_converter(value=degree, scale=unit)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def fetch_data(database, query='SELECT *'):
+    return data_fetcher(db=database, sql=query)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def merge_strings(str1, str2='Hello'):
+    return string_merger(part1=str1, part2=str2)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def calculate_area(length, width=10):
+    return area_computation(len=length, wid=width)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def process_image(image, transform='resize'):
+    return image_processor(img=image, action=transform)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def analyze_text(text, language='en'):
+    return text_analyzer(content=text, lang=language)
+","correct","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def create_user(username, password='test123'):
+    return user_creator(name=username, pwd=password)","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def process_items(item: AnyStr):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def calculate_radius(radius: float):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def format_output(data: str, limit: int = 50):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def handle_request(request: dict, timeout: int = 30, retries=3):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def filter_data(dataset: list, threshold: float = 0.5):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def save_file(file_name: str, file_format: str = 'txt', path='/default/path'):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def connect_to_db(host: str, port: int, user: str = 'admin', password='password123'):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def generate_report(report_type: str, data: dict, output_format: str = 'pdf'):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def parse_json(json_str: str, max_depth: int = 10, errors='ignore', encoding='utf-8'):
+","correct","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def execute_task(task_id: int, task_name: str, priority: int = 1, retries: int = 3, timeout=60):","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if bar == 'spam':
+    process_spam()
+action_one()
+action_two()
+action_three()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while condition_is_met:
+    execute_first()
+run_second()
+perform_third()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if baz == 'eggs':
+    handle_eggs()
+initiate_one()
+begin_two()
+complete_three()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while not finished:
+    first_step()
+second_step()
+third_step()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if qux == 'foobar':
+    handle_foobar()
+start_one()
+continue_two()
+finalize_three()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if var == 'value':
+    do_value_action()
+method_one()
+method_two()
+method_three()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while active:
+    manage_first()
+start_second()
+finish_third()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if var_name == 'test':
+    test_case()
+step_one()
+step_two()
+step_three()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while flag:
+    initial_step()
+intermediate_step()
+last_step()
+","correct","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if variable == 'data':
+    process_data()
+execute_one()
+execute_two()
+execute_three()","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","CONFIG_FILES = ('config.json',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","TEMPLATE_FILES = ('template.html',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","SCRIPT_FILES = ('script.py',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","DOC_FILES = ('readme.md',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","RESOURCE_FILES = ('resource.xml',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","DATA_FILES = ('data.csv',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","LIST_FILES = ('list.txt',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","IMAGE_FILES = ('image.png',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","VIDEO_FILES = ('video.mp4',)
+","correct","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","ICON_FILES = ('icon.ico',)","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Calculate the area of a circle
+
+The radius must be a positive number.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Convert temperature
+
+Acceptable units are Celsius and Fahrenheit.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Fetch user data
+
+Ensure the user ID is valid before making the request.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Send notification
+
+Use email or SMS based on user preference.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Parse XML file
+
+Handle all possible XML parsing exceptions carefully.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Generate report
+
+Include data from the last seven days.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Authenticate user
+
+Use OAuth 2.0 protocol for security.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Resize image
+
+Maintain the aspect ratio to avoid distortion.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Back up database
+
+Schedule the backup during off-peak hours.
+""""""
+","correct","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Validate input
+
+Ensure the input meets the required format.
+""""""","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if bar is not None:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if baz is not 0:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if qux is not 42:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if quux is not 'test':
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if corge is not []:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if grault is not True:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if garply is not """":
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if waldo is not 3.14:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if fred is not False:
+","correct","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if xyzzy is not ():","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def g(a, b): return a * b
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def h(p, q, r): return p + q - r
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def sum(a, b, c, d): return a + b + c + d
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def diff(l, m): return l - m
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def mul(x, y, z): return x * y * z
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def div(u, v): return u / v
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def mod(a1, b1, c1): return a1 % b1 + c1
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def complex_op(x1, y1): return (x1 ** 2) + y1
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def arithmetic_op(p1, q1, r1, s1): return p1 * q1 - r1 + s1
+","correct","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","def subtraction(a2, b2, c2, d2, e2): return a2 - b2 - c2 - d2 - e2","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import different_module
+except ModuleNotFoundError:
+    different_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import another_module
+except NameError:
+    another_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import sample_module
+except AttributeError:
+    sample_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import custom_module
+except ValueError:
+    custom_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import special_module
+except KeyError:
+    special_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import test_module
+except TypeError:
+    test_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import example_module
+except IndexError:
+    example_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import temp_module
+except OSError:
+    temp_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import random_module
+except ZeroDivisionError:
+    random_module = None
+","correct","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import main_module
+except RuntimeError:
+    main_module = None","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    item = my_dict['key']
+except KeyError:
+    return key_not_found_error('key')
+else:
+    return process_item(item)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    temperature = sensor_data.get('temp')
+except AttributeError:
+    return attribute_missing('temp')
+else:
+    return handle_temperature(temperature)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    username = config['user']
+except KeyError:
+    return missing_config_key('user')
+else:
+    return setup_user(username)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    data = json_loader.load(json_string)
+except ValueError:
+    return invalid_json(json_string)
+else:
+    return process_json(data)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    pi_value = circle_calculator['pi']
+except KeyError:
+    return key_not_available('pi')
+else:
+    return compute_circle_area(pi_value)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    user_email = user_info['email']
+except KeyError:
+    return email_not_provided('email')
+else:
+    return validate_email(user_email)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    student_grade = grade_book['student']
+except KeyError:
+    return student_not_found('student')
+else:
+    return calculate_gpa(student_grade)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    price = item_prices['item']
+except KeyError:
+    return item_not_in_catalog('item')
+else:
+    return apply_discount(price)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    balance = accounts['user_balance']
+except KeyError:
+    return balance_not_available('user_balance')
+else:
+    return update_balance(balance)
+","correct","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    config_value = system_config['value']
+except KeyError:
+    return config_key_missing('value')
+else:
+    return apply_config(config_value)","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with db.start_transaction():
+    perform_db_operation(db)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with connection.begin_session():
+    run_transaction_tasks(connection)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with transaction_mgr.start():
+    carry_out_operations(transaction_mgr)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with resource_manager.initialize():
+    execute_resource_tasks(resource_manager)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with trans_context.start_trans():
+    process_transaction_tasks(trans_context)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with txn_controller.begin_txn():
+    handle_transaction_process(txn_controller)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with session_mgr.start_session():
+    run_session_tasks(session_mgr)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn_mgr.begin_conn():
+    perform_connection_tasks(conn_mgr)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with db_controller.initiate():
+    execute_db_operations(db_controller)
+","correct","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with trans_admin.start_transaction():
+    conduct_transaction_work(trans_admin)","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if username.startswith('admin'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if file_path.endswith('.txt'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if user_id.startswith('USR'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if log_line.endswith('ERROR'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if file_name.startswith('report'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if input_str.startswith('>'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if url.endswith('/home'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if email.endswith('@example.com'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if transaction_id.startswith('TXN'):
+","correct","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if comment.startswith('#'):","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(item, str):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(data, list):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(value, float):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(info, dict):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(entry, set):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(record, tuple):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(element, bytearray):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(content, bool):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(character, complex):
+","correct","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if isinstance(response, frozenset):","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not nums:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if items:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not data_list:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if records:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not emp_ids:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if values:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not indices:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if results:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not user_names:
+","correct","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if bool_flags:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if flag:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if check:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","while status:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if condition_met:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","while signal:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if is_active:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if proceed:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","while valid:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if is_enabled:
+","correct","True"
+"Don�t compare boolean values to True or False using ==","if proceed_with_action:","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","coordinate: float
+
+class Person:
+    age: int = 30
+    name: str = 'John'
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","coordinate: List[int]
+
+class Person:
+    identifier: str
+    status: bool = True
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","value: Tuple[str, float]
+
+class Shape:
+    vertices: List[Tuple[int, int]]
+    name: str = 'rectangle'
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","name: str
+
+class Employee:
+    id: int = 123
+    address: str
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","index: int
+
+class Product:
+    price: float
+    stock: int = 50
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","code: str
+
+class Grade:
+    score: float
+    letter: str = 'A'
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","total: int
+
+class Book:
+    pages: int = 200
+    title: str = 'Python'
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","index: float
+
+class Station:
+    height: int = 100
+    location: str
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","timestamp: datetime
+
+class Event:
+    duration: int = 60
+    description: str = 'Meeting'
+","correct","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","reference: bool
+
+class File:
+    size: int = 5120
+    type: str = 'Text'","correct","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/path/to/file1') as f1, open('/path/to/file2', 'r') as f2:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/path/another_file') as file1,\
+open('/path/output_file', 'w') as file2:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/path/read_me') as INPUT,\
+ open('/path/write_me', 'w') as OUTPUT:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with     open('/path/source') as src, open('/path/target', 'w') as tgt:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/data/input.txt') as input_file, open('/data/output.txt', 'w') \
+as output_file:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/path/source') as s,open('/path/destination', 'w') as d:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with    open('/data/fileA')  as a,open('/data/fileB', 'w') as b:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('/path1') as f1\
+open('/path2', 'w') as f2:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open('input.txt') as in_file, \
+open('output.txt', 'w') as out_file:
+","wrong","True"
+"Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3.10, so backslashes were acceptable for that casewith open('/path/to/some/file/you/want/to/read') as file_1, \","with open(""file1"") as file_one,  open(""file2"", ""w"") as file_two:","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","result = (salary +
+          bonus + stock_options -
+          tax_deduction)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_income = (revenue *
+              profit_margin +
+            costs)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total = (x * y *
+            z - 
+               w)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","calculation = (value_1 - value_2 +
+               value_3-value_4 + 
+            value_5)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","expenses = (rent + utilities 
+               + groceries+ 
+             transportation)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","payment = (principal -
+           interest -fees -
+               insurance)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","balance = (assets/liabilities - 
+             exps + income)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","sum_total = (num1+num2*
+             (num3 - num4)
+          +num5)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","profit = (total_sales +
+            cost_of_goods_sold +salaries - 
+depreciation - taxes)
+","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","forecast = (projected_income - estimated_costs+
+    additional_expenses - 
+unexpected_losses)","wrong","True"
+"Imports should usually be on separate lines:","import os, sys
+","wrong","True"
+"Imports should usually be on separate lines:","import datetime, time
+","wrong","True"
+"Imports should usually be on separate lines:","import re, os, sys
+","wrong","True"
+"Imports should usually be on separate lines:","import json, requests
+","wrong","True"
+"Imports should usually be on separate lines:","from datetime import datetime, time imoprt sleep
+","wrong","True"
+"Imports should usually be on separate lines:","import os, json, re
+","wrong","True"
+"Imports should usually be on separate lines:","import textwrap, itertools
+","wrong","True"
+"Imports should usually be on separate lines:","from math, import sin, cos
+","wrong","True"
+"Imports should usually be on separate lines:","import flask, logging
+","wrong","True"
+"Imports should usually be on separate lines:","import numpy, pandas, matplotlib","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+__version__ = '0.1'
+""""""This is the example module.
+
+This module does stuff.
+""""""
+
+__all__ = ['a', 'b', 'c']
+__author__ = 'Cardinal Biggles'
+
+import os
+import sys
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+__all__ = ['a', 'b', 'c']
+__version__ = '0.1'
+import os
+import sys
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+
+__author__ = 'Cardinal Biggles'
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","import os
+from __future__ import barry_as_FLUFL
+
+__all__ = ['a', 'b', 'c']
+__author__ = 'Cardinal Biggles'
+
+import sys
+__version__ = '0.1'
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+import os
+
+__all__ = ['a', 'b', 'c']
+
+import sys
+
+__version__ = '0.1'
+__author__ = 'Cardinal Biggles'
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+__all__ = ['a', 'b', 'c']
+
+import os
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+
+import sys
+__version__ = '0.1'
+__author__ = 'Cardinal Biggles'
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","""""""This is the example module.
+
+This module does stuff.
+""""""
+
+from __future__ import barry_as_FLUFL
+
+import os
+import sys
+__all__ = ['a', 'b', 'c']
+__version__ = '0.1'
+__author__ = 'Cardinal Biggles'
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+
+import os
+
+__all__ = ['a', 'b', 'c']
+__version__ = '0.1'
+
+import sys
+__author__ = 'Cardinal Biggles'
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+""""""This is the example module.
+
+This module does stuff.
+""""""
+
+import os
+__all__ = ['a', 'b', 'c']
+
+import sys
+__version__ = '0.1'
+
+__author__ = 'Cardinal Biggles'
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+__all__ = ['a', 'b', 'c']
+""""""This is the example module.
+
+This module does stuff.
+""""""
+__version__ = '0.1'
+
+import os
+
+__author__ = 'Cardinal Biggles'
+import sys
+","wrong","True"
+"Module level �dunders� (i.e. names with two leading and two trailing underscores) such as __all__, __author__, __version__, etc. should be placed after the module docstring but before any import statements except from __future__ imports. Python mandates that future-imports must appear in the module before any other code except docstrings","from __future__ import barry_as_FLUFL
+
+import os
+""""""This is the example module.
+
+This module does stuff.
+""""""
+import sys
+
+__all__ = ['a', 'b', 'c']
+__version__ = '0.1'
+__author__ = 'Cardinal Biggles'","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","spam( ham[1], { eggs: 2})
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","process( items[ 2 ], { category:3} )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","apply(my_function[ 4 ], { purpose :4 } )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","calculate(operations[ 8], { result_type: 10})
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","foo( bar[2], {baz: 5 } )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","compute( data_set[ 3 ], { key:value } )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","handler( request[ 1], { params: 12} )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","analyze( samples[ 9 ], { type:16 })
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","transform( inputs[ 5 ], { output_format: 'csv' } )
+","wrong","True"
+"Avoid extraneous whitespace Immediately inside parentheses, brackets or braces","update( records[ 0 ], { field: 'value' } )","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","numbers = (1, )
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","elements = (3,  )
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","my_list = [1, 2, 3, ]
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","data = {'a': 1, 'b': 2, }
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","num_tuple=(5, )
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","coordinates = (x, y, )
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","def make_tuple():
+    return (42, )
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","def get_list():
+    return [4, 5, 6, ]
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","result_set = {'success', 'failure', }
+","wrong","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","points = (4, )
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while a == 5: print(a , b); b , a = a , b
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if m == 3 : print(m,n); n ,m = m ,n
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if k < 2: print(k , 2); k , two = two , k
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while i != 7 : print(i, j ); i , j = j, i
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if b >= 8 : print(b , c); c , b = b , c
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if x == 9 :print(9,y); y , x = y, 9
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while val == 10: print( val, check ) ; check , val = val , check
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if a == 2: print(a ,b); b ,a = 2 , a
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","while x == 8 : print(x ,z ); x= z , x
+","wrong","True"
+"Avoid extraneous whitespace Immediately before a comma, semicolon, or colon","if arg1 == 4: print(arg1 , arg2 ); arg2 ,arg1 = arg1 , 4","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","data[lower+5: upper+5]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","lst[0: 5: 2]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","array[ :upper]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","nums[low: upper: step]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","text[low: : s]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","matrix[i: j :s], matrix[i :j: s]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","seq[1: 20:3], seq[1 : 20 : 3]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","buffer[ : up], buffer[lo :step]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","table[start+offset:end], table[start : end :3]
+","wrong","True"
+"However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:","data_pack[start:end: stride]","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","foo (arg1)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","bar (x, y)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","baz_1 (q, r, s)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","qux (i, j, k, l)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","function (arg)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","function_name (argument_xyz)","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","ham   (a, b, c)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","eggs  (x)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","foo_bar   (arg1, arg2)
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts the argument list of a function call:","baz_qux  (m, n, o, p)","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","val = dct  ['key']
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","my_list[elements] = lst  [index]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","value = my_tuple  [0]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","sublist = lst  [:5]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","subset = tup  [1:4]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","dict_slice = dct  [:3]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","my_dict = {""a"": 1, ""b"": 2, ""c"": 3}
+ind_val = my_dict  ['b']
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","lst_of_numbers = [1, 2, 3, 4, 5]
+element = lst_of_numbers  [2]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","tuple_data = (10, 20, 30, 40)
+first_element = tuple_data  [0]
+","wrong","True"
+"Avoid extraneous whitespace Immediately before the open parenthesis that starts an indexing or slicing","range_list = list(range(10))
+first_half = range_list  [:5]","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","a          = 10
+b = 20
+result     = a + b
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","count      = 5
+total=10
+average     = total / count
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","temp1  = 50
+tempTwo   = 100
+tempResult= temp1 + tempTwo
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","value      =23
+threshold  =10
+isAboveThreshold   =value>threshold
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","x      =7
+y=15
+result     =x*y
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","first_name  = ""John""
+last_name         =""Doe""
+full_name = first_name + "" "" + last_name
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","num1         = 3
+num2        = 5
+sum_total=num1 + num2
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","score          = 89
+max_score           = 100
+percentage   = (score/max_score) * 100
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","item_price = 2500  
+tax       = 0.18 
+total_price  = item_price * (1 +tax) 
+","wrong","True"
+"Avoid extraneous whitespace: More than one space around an assignment (or other) operator to align it with another:","user_name     = ""admin""
+password      =""admin123""
+credentials  =user_name + "":"" + password","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","j=j*3+2
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","count +=5
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","y=y - 1
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","result= ((x+y)*(x-y))
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","valid=False or a == b
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","area= length * width
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","success=True  and  data != None
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","diff = value -value_new
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","num=num+ count
+","wrong","True"
+"Always surround these binary operators with a single space on either side: assignment (=), augmented assignment (+=, -= etc.), comparisons (==, <, >, !=, <>, <=, >=, in, not in, is, is not), Booleans (and, or, not). If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator","outcome = (p*q)+(r*s)","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def clean_data(input:AnyStr)->PosInt:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def process_text(value :str) ->int:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def compute_sum(a:int)-> int:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def format_str(text: Str) ->Bool:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def build_dict(data: Dict[str,Any])->Dict:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def read_file(file_name:Str)-> List[str]:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def write_file(file_name : Str)->List[ Str]:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def parse_json(json_str:AnyStr) -> List[Dict[str,Any]]:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def calculate_total(nums: List[int])->int:
+","wrong","True"
+"Function annotations should use the normal rules for colons and always have spaces around the -> arrow if present. (See Function Annotations below for more about function annotations.):","def transform_data(data:dict)-> List[Tuple]:","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def divide(a, b =1):
+    return a / b
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def mod(a,b = 3):
+    return a % b
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def greet(greeting,msg = ""Hello""):
+    print(f""{greeting}, {msg}"")
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def add(a=1, b=2, c = 3):
+    return a + b + c
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def configure(option = ""default"", value=42):
+    settings[option] = value
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def subtract(x ,y= 10):
+    return x - y
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def multiply(value1=2, value2 =3):
+    return value1 * value2
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def concatenate(str1, str2 = "" world""):
+    return str1 + str2
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def calculate_power(base , exponent =2):
+    return base ** exponent
+","wrong","True"
+"Don�t use spaces around the = sign when used to indicate a keyword argument, or when used to indicate a default value for an unannotated function parameter:","def print_message(msg , repeat = 1):
+    for _ in range(repeat):
+        print(msg)","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def processing(text: str=None):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def calculate(a:int=0):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def transform(data:List=None, kind:str=""default""):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def normalize(input_data: Dict =None, threshold: float=0.5, max_val: int=10):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def parse_line(input_txt:str= """", delimiter: str= ','):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def filter_data(items:List[str]= None, condition:str=""active"", limit:int=100):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def convert(value:float =10.0, unit:str=None):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def aggregate(data_series: List[List[int]]=None, window_size:int= 5):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def display_results(output: Dict[str, int] =None, title:str=""Results""):
+","wrong","True"
+"When combining an argument annotation with a default value, however, do use spaces around the = sign:","def compare_items(item1:Dict= None, item2:Dict= None, mode:int =1):","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if bar == 'foo': process_foo(); log('foo processed')
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","do_a(); do_b()
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while counter < 10: increment_counter(); log(counter)
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while x < 5: print(x); x += 1
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if baz == 'qux': do_qux_task(); clean_up()
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if name == 'Alice': greet(name); send_welcome_message()
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","while val < 100: print(val); val += 10
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","flag = True; while flag: process_flag(); toggle_flag()
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","if is_valid: save_data(); notify_user(); log('Data saved')
+","wrong","True"
+"Compound statements (multiple statements on the same line) are generally discouraged:","do_first_thing(); check_status(); do_last_thing()","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","file_list = 'config.ini',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","credentials = 'user.json',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","def get_files(): return 'data.txt',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","ITEMS = 'inventory.csv',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","log_files = 'application.log',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","def fetch_data():
+    dataset = 'data.csv',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","my_files = 'image.png',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","Db_files = 'schema.sql',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","def get_logs(): return 'error.log',
+","wrong","True"
+"Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses:","DATA_SET = 'results.xml',","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Fetch a widget from the database
+
+This operation may time out if the database is under high load.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Compute the difference between x and y
+
+Return the absolute value of the difference.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Initialize the simulation environment
+
+Raises an error if the configuration is invalid.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Convert the list to a dictionary
+
+Each element in the list should be a key-value tuple.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Serialize the object to JSON
+
+Ensures that all fields are properly converted.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Generate a random token
+
+Token is suitable for CSRF protection.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Merge two dictionaries into one
+
+Updates the first dictionary with the contents of the second one.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Parse the XML document
+
+Returns a dictionary representing the XML structure.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Send an HTTP request to the server
+
+Handles retries on failure automatically.""""""
+","wrong","True"
+"the """""" that ends a multiline docstring should be on a line by itself","""""""Calculate the factorial of the number
+
+Uses recursion for implementation.""""""","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not bar is None:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not func() is None:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not a is 0:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not b is ""test"":
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not var_a is False:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not my_var is 100:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not someFunction() is arr[0]:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not self.attr is value:
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not obj.method() is ""value"":
+","wrong","True"
+"Use is not operator rather than not ... is. While both expressions are functionally identical, the former is more readable and preferred:","if not result is True:","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","g = lambda a, b: a + b
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","h = lambda num1, num2, num3: num1 * num2 * num3
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","sum_func = lambda i, j=3: i + j
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","comp = lambda n: n > 10
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","concat = lambda s1, s2: s1 + ' ' + s2
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","power = lambda base, exponent: base ** exponent
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","div = lambda x, y, z: x / (y + z)
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","modulus = lambda p, q, r: (p % q) * r
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","conditional = lambda count: 'Odd' if count % 2 else 'Even'
+","wrong","True"
+"Always use a def statement instead of an assignment statement that binds a lambda expression directly to an identifier:","transform = lambda a=10, b=25, c=35: (a + b) * c","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import platform_specific_module
+except:
+    platform_specific_module = None
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import platform_specific_module
+except Exception:
+    platform_specific_module = None
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    import platform_specific_module
+except BaseException:
+    platform_specific_module = None
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    some_var = operation_that_might_fail()
+except:
+    some_var = 'default_value'
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    some_var = operation_that_might_fail()
+except Exception:
+    some_var = 'default_value'
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    some_var = operation_that_might_fail()
+except BaseException:
+    some_var = 'default_value'
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    risky_function()
+except:
+    handle_error()
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    risky_function()
+except Exception:
+    handle_error()
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    risky_function()
+except BaseException:
+    handle_error()
+","wrong","True"
+"When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:","try:
+    result = complex_calculation()
+except:
+    result = 0","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    result = complex_computation(data)
+    data['key'] = 'value'
+except KeyError:
+    result = handle_error()
+return result
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    value = dictionary[key]
+    process_value(value)
+except KeyError:
+    return handle_key_error()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    update_database(record)
+    log_info()
+except DatabaseError:
+    alert_admin()
+return operation_successful
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    data.append(item)
+    process_data()
+except AttributeError:
+    return handle_append_error()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    result = api_call()
+    log_result(result)
+except NetworkError:
+    return handle_network_issue()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    parse_file('config.json')
+    initialize_settings()
+except FileNotFoundError:
+    return setup_default_config()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    value = some_dict[some_key]
+except KeyError:
+    modify_dictionary(some_dict)
+    return fallback_value()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    open_file(file_path)
+    process_file()
+except IOError:
+    return file_handling_error()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    connect_to_server(server_url)
+    authenticate_user(credentials)
+except AuthenticationError:
+    return handle_auth_error()
+","wrong","True"
+"Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:","try:
+    item = list_structure[index]
+    update_item(item)
+except IndexError:
+    return index_error_handling()","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with transaction_handler:
+    execute_transaction_steps(transaction_handler)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with database_connection:
+    run_transaction_tasks(database_connection)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn:
+    perform_tx_steps(conn)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn_handler:
+    process_transactions(conn_handler)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with db_conn:
+    handle_tasks_in_transaction(db_conn)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn_mgr:
+    handle_transaction_steps(conn_mgr)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with connection_manager:
+    carry_out_transaction(connection_manager)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with txn_handler:
+    run_steps_in_transaction(txn_handler)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn:
+    do_tx_stuff(conn)
+","wrong","True"
+"Context managers should be invoked through separate functions or methods whenever they do something other than acquire and release resources:","with conn:
+    execute_tx_operations(conn)","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if spam[:3] == 'egg':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if customers[-4:] == 'list':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if file_name[:6] == 'report':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if text[-3:] == 'end' and text[:5] == 'start':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if foo_var[:2] == 'ab':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if my_function_name()[1:4] == 'ple':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if widget[:5] == 'input':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if log[-1:] == 'g':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if sentence[2:5] == 'abc':
+","wrong","True"
+"Use ''.startswith() and ''.endswith() instead of string slicing to check for prefixes or suffixes. startswith() and endswith() are cleaner and less error prone:","if url[4:7] == '://':","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(var) is type(10):
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(number) == type(5):
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(my_var) != type(5.0):
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(obj) == int:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(item) is float:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(element) != str:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(a) is not bool:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(data) != list:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(value) is not dict:
+","wrong","True"
+"Object type comparisons should always use isinstance() instead of comparing types directly:","if type(x) is not type(0):","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if len(my_sequence): 
+    pass
+else: 
+    pass
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if len(data): 
+    print(""Not empty"")
+else: 
+    print(""Empty"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if items == []:
+    print('Empty')
+else:
+    print('Not empty')
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if length(seq):
+    print(""Sequence has elements"")
+else: 
+    print(""Sequence is empty"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not (len(values) == 0):
+    print(""List is not empty"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not len(sample_list):
+    print(""Sample list is empty"")
+else:
+    print(""Sample list contains elements"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if length(items) > 0:
+    print(""Items available"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if count == 0:
+    print(""Empty list"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if len(data) != 0:
+    print(""Data present"")
+","wrong","True"
+"For sequences, (strings, lists, tuples), use the fact that empty sequences are false","if not len(tup):
+    print(""Tuple is empty"")","wrong","True"
+"Don�t compare boolean values to True or False using ==","if welcome_message == True:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","while is_active == False:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","if (flag == True):
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","while complete != True:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","if check_status() == True:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","if not_found() == False:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","while is_ready != False:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","if function_call() != True:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","if welcome_message == True:
+","wrong","True"
+"Don�t compare boolean values to True or False using ==","while (permission_granted == False):","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","identifier:int
+
+class Rectangle:
+    length :int = 100
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","val : str= 'hello'
+
+class Person:
+    age:int
+    name :str = 'Alice'
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","message:     str = ""default""
+
+class Square:
+    side_length :int=20
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","value :float = 0.5
+
+class Book:
+    pages:int
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","number:int = 42
+
+class Engine:
+    horsepower:int = 500
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","data:List[int] = [1, 2, 3]
+
+class Car:
+    model :str = 'Model X'
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","is_valid:bool=False
+
+class User:
+    username : str = 'user123'
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","pi:    float=3.14
+
+class Shape:
+    sides:int=4
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","speed:int
+
+class Animal:
+    species : str = 'Dog'
+    weight :float= 10.5
+","wrong","True"
+"Annotations for module level variables, class and instance variables, and local variables should have a single space after the colon. There should be no space before the colon. If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:","error_code:int = 404
+
+class Response:
+    status:    str = 'Not Found'","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_cost = (item_price
+              * quantity
+              + shipping_fee
+              - discount)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_income = (salary
+                + freelance_income
+                + rental_income
+                - tax_deduction)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","final_score = (test_score
+               * weight_factor
+               + bonus_points
+               - penalty_points)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_profit = (revenue
+              / cost_of_goods_sold
+              - operating_expenses
+              + interest_income)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","balance = (initial_balance
+           + deposits
+           - withdrawals
+           / service_fees)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_expense = (food
+                 + transport
+                 / utilities
+                 - discounts_received)","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_assets = (total_assets
+              - total_liabilities
+              + market_value_adjustment)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","annual_savings = (salary
+                  - rent
+                  - utilities
+                  - entertainment_expense)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","remaining_budget = (allocated_budget
+                    - amounts_spent
+                    + cash_back
+                    - savings_transferred)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","final_amount = (principal
+                * (1 + interest_rate)
+                - early_withdrawal_penalty)","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","vals = (1, 2, 3,)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","numbers = (4, 5,)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","coords = (7, 8, 9, 10,)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","colors = ('red', 'green',)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","shapes = ('circle',)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","points = (10, 20,)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday',)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","fruits = ('apple', 'banana',)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","letters = ('a', 'b',)
+","correct","True"
+"Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","animals = ('cat', 'dog', 'mouse', 'elephant',)","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","FILE_NAMES = [
+    'config.yml',
+    'pytest.ini',
+    ]
+setup_files(FILE_NAMES,
+            er_raise=True,
+            )
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","CONFIG_FILES = (
+    'program.conf',
+    'environment.ini',
+    )
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","init_resources(resource_paths,
+               ignore_errors=False,
+               )
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","LOG_FILES = [
+    'logfile.log',
+    'debug.log',
+    ]
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","generateHtml(templateFiles,
+             debug=False,
+             )
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","script_paths = [
+    'script.sh',
+    'deploy.bash',
+    ]
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","initialize_configs(CONF_PATHS,
+                   overwrite=True,
+                   )
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","data_files = [
+    'data1.csv',
+    'data2.csv',
+    ]
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","document_files = [
+    'doc1.pdf',
+    'doc2.docx',
+    ]
+","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","scripts = (
+    'install.sh',
+    'update.bash',
+    )","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def calculate_y(z):
+    if z > 5:
+        return z * 2
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def process_value(a, b):
+    if a <= b:
+        return a + b
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def check_negative(n):
+    if n < 0:
+        return -n
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def power_of_two(num):
+    if num > 10:
+        return num ** 2
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def validate_input(i, j, k):
+    if i < j:
+        return i
+    elif j > k:
+        return j
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def positive_check(val):
+    if val > 0:
+        return val * 3
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def triple_value(value):
+    if value == 7:
+        return value * 3
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def adjust_number(number, adjust_by):
+    if number + adjust_by > 100:
+        return number - adjust_by
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def evaluate_score(score, threshold, bonus):
+    if score > threshold:
+        return score + bonus
+    else:
+        return None
+    return None
+","correct","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def process_data(data, index, value):
+    if data[index] == value:
+        return data[index + 1]
+    else:
+        return None
+    return None","correct","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","users = ['john', 'jane',]
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","items = ('apple', 'banana',)
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","config = {
+    'version': '1.0', 'timeout': 100,}
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","ALERTS = ['warning', 'error',]","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","info = {'name': 'Alice', 'age': 30,}
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","initializeDevices(devices=('camera', 'sensor',), auto_connect=False,)
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","printPurchase(items=('apple', 'banana',), final_check=True,)
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","send_welcome_email(users=['john', 'jane',], send_copy=True,)
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","configure(options={'debug': True, 'logs': False,}, save=True,)
+","wrong","True"
+"However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the case of singleton tuples):","processData(data={'key1': 'value1', 'key2': 'value2',}, validate=True,)","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def compute_area(radius, pi_value):
+    if radius < 0:
+        return None
+    if radius == 0:
+        return
+    return pi_value * radius * radius
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def calculate_discount(price, discount, min_price):
+    if discount > 100:
+        return 0
+    if price <= min_price:
+        return
+    return price * (1 - discount / 100)
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def process_data(data, factor, threshold):
+    if not data:
+        return
+    for item in data:
+        if item < threshold:
+            return None
+        result = item * factor
+    return result
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def multiply(x, y, z):
+    if x == 0 or y == 0 or z == 0:
+        return 0
+    if x < 0 or y < 0:
+        return
+    return x * y * z
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def evaluate_num(value, threshold, multiplier):
+    if value > threshold:
+        return value * multiplier
+    if value < 0:
+        return None
+    if value == threshold:
+        return","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def categorize_grade(score, passing, failing):
+    if score < passing:
+        return 'Fail'
+    if score > failing:
+        return
+    return 'Pass'
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def sum_values(a, b, c):
+    if a < 0:
+        return
+    if b < 0:
+        return None
+    return a + b + c
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def to_uppercase(text, length):
+    if len(text) < length:
+        return
+    result = text.upper()
+    return result
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def divide_vals(num, den, precision):
+    if den == 0:
+        return None
+    if precision < 0:
+        return
+    return round(num / den, precision)
+","wrong","True"
+"Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable):","def check_value(number, min_bound, max_bound):
+    if number < min_bound or number > max_bound:
+        return
+    if number % 2 != 0:
+        return None","wrong","True"

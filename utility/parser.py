@@ -30,22 +30,13 @@ items = []
 for label in LABELS:
     buffer_name = get_buffer_name(label)
 
-    with open(buffer_name, 'r') as file:
+    with open(buffer_name, 'r', encoding="utf8") as file:
         multiple_lines_text = file.read()
         lines = multiple_lines_text.strip().split('--')
         items.append(lines)
 
 correct_items, wrong_items = items
-# print(correct_items)
-# print(wrong_items)
-# print('----------------------')
-# print()
 
-# for x, y in zip(correct_items, wrong_items):
-#     print('Correct:', x, sep='\n')
-#     print('Wrong:', y, sep='\n')
-
- # 1st validity check: the buffers must contain the same number of elements
 assert len(correct_items) == len(wrong_items), "The buffers must contain the same number of elements" 
 
 N_items = len(correct_items)

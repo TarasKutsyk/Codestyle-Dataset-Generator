@@ -4,7 +4,7 @@ You are an expert programmer with extensive experience and vast knowledge of dif
 You will be given an example of a stylistically correct code snippet, and your task is to generate a total of 10 similar snippets. When generating snippets, you must strictly adhere to the following instructions:
 
 <instructions>
-1. Snippets are valid pieces of Python code that must be identical to the provided <example> in the <style_rule>, but not in all <other_aspects> (all relevant data are provided to you below in the corresponding XML sections).
+1. Snippets are valid pieces of Python code that must be identical to the provided <example> in the <style_rule>, but not in all <other_aspects> (all relevant data are provided to you below in the corresponding XML sections). Provided example may contain multiple independent snippets, but your task is to generate one snippet at a time.
 2. Generated snippets must be different in <other_aspects> both from the provided <example> and from each other. If some aspects from <other_aspects> are irrelevant to the provided examples, you can safely ignore them, and focus on relevant ones instead. You may change the <example> code in the aspects from the <other_aspects> block **only**, so don't be overly creative.
 3. Pay special attention to identation: some <style_rule>s rely on a specific, fixed number of spaces in each new line of code, so pay close attention to keep the identation identical to the one provided in the <example>, if this is what style rule requires.
 </instructions>
@@ -20,6 +20,7 @@ You will be given an example of a stylistically correct code snippet, and your t
 <example>
 {code}
 </example>
+Warning! Provided <example> may contain multiple independent code snippets, but your task is to **generate one snippet at a time**.
 
 <output_instruction>
 
@@ -89,7 +90,7 @@ You are an expert programmer with extensive experience and vast knowledge of dif
 You will be given an example of a stylistically *wrong* snippet, and your task is to generate a total of 10 similar snippets. When generating snippets, you must strictly adhere to the following instructions:
 
 <instructions>
-1. Snippets are valid pieces of Python code that must be similar to the provided <wrong_snippet> example in a sense that they *must violate* a certain <style_rule> (all relevant data are provided to you below in the corresponding XML sections).
+1. Snippets are valid pieces of Python code that must be similar to the provided <wrong_snippet> example in a sense that they *must violate* a certain <style_rule> (all relevant data are provided to you below in the corresponding XML sections). Provided example may contain multiple independent snippets, but your task is to generate one snippet at a time.
 2. Snippets will be part of a ML dataset, so they must have some variability, being different both from the provided examples and from each other. To provide this variability, you need to modify the provided examples in the aspects from the <other_aspects> section. If some aspects from <other_aspects> are irrelevant to the provided examples, you can safely ignore them, and focus on relevant ones instead.
 3. When generating similar wrong snippets, modifying the provided examples in all the <other_aspects> as described in the previous instruction, you must remember one main rule:
 4. Snippets must not be identical to the <correct_snippet> in the <style_rule>.
@@ -111,6 +112,8 @@ But in either way, you must ensure that the generated snippet *does not follow* 
 <wrong_snippet>
 {wrong_code}
 </wrong_snippet>
+
+Warning! Provided examples may contain multiple independent code snippets, but your task is to **generate one snippet at a time**.
 
 <other_aspects>
 {aspects}
@@ -144,6 +147,9 @@ Now you must correct these snippets, ensuring that all the requirements are met:
 1. Snippets have to be consistent with the <style_rule> you were provided with, which you refined in the <refined_rule> block.
 2. Snippets have to be different from the provided <example> in all the relevant <other_aspects>, which you listed out in the <generation_instructions>.
 
+Most importantly, you absolutely have to make sure to fix the following issue (ignore this if there's no specific issue specified below):
+{issue}
+
 Use the same format to output the corrected snippets (only snippets of code, without comments):
 <result>
 {{corrected_snippet_1}}
@@ -163,6 +169,9 @@ There's a problem with the following snippets you generated:
 Now you must correct these snippets, ensuring that all the requirements are met:
 1. Snippets absolutely have to violate the <style_rule> you were provided with, implementing one of the violations from <violate_instructions>.
 2. Snippets have to be different from the provided examples in all relevant <other_aspects>.
+
+Most importantly, you absolutely have to make sure to fix the following issue (ignore this if there's no specific issue specified below):
+{issue}
 
 Use the same format to output the corrected snippets (only snippets of code, without comments):
 <result>

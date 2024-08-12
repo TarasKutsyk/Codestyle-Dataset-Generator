@@ -18,6 +18,8 @@ def get_aspect(identifier: str) -> list[str]:
             aspect_name = 'naming'
         case 'm':
             aspect_name = 'module'
+        case 's':
+            aspect_name = 'string'
         case 't':
             aspect_name = 'types'
         case 'fs':

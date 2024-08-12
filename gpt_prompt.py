@@ -48,20 +48,20 @@ class GPTClient:
             self._print_chat(prompt_text)
         return self._get_response(prompt_text, **kwargs)
     
-    def regenerate_correct_samples(self, wrong_snippets_list: list[str], verbose=True, **kwargs):
+    def regenerate_correct_samples(self, wrong_snippets_list: list[str], issue: str = "", verbose=True, **kwargs):
         wrong_snippets_str = '\n--\n'.join(wrong_snippets_list)
 
-        prompt_text = PROMPT_REGENERATE_CORRECT.format(wrong_snippets=wrong_snippets_str,
+        prompt_text = PROMPT_REGENERATE_CORRECT.format(wrong_snippets=wrong_snippets_str, issue=issue,
                                                        wrong_snippets_count=len(wrong_snippets_list))
         if verbose:
             self._print_chat(prompt_text)
 
         return self._get_response(prompt_text, **kwargs)
     
-    def regenerate_wrong_samples(self, wrong_snippets_list: list[str], verbose=True, **kwargs):
+    def regenerate_wrong_samples(self, wrong_snippets_list: list[str], issue: str = "", verbose=True, **kwargs):
         wrong_snippets_str = '\n--\n'.join(wrong_snippets_list)
 
-        prompt_text = PROMPT_REGENERATE_WRONG.format(wrong_snippets=wrong_snippets_str,
+        prompt_text = PROMPT_REGENERATE_WRONG.format(wrong_snippets=wrong_snippets_str, issue=issue,
                                                      wrong_snippets_count=len(wrong_snippets_list))
         if verbose:
             self._print_chat(prompt_text)
@@ -69,8 +69,8 @@ class GPTClient:
         return self._get_response(prompt_text, **kwargs)
     
     def _print_chat(self, new_prompt):
-        for item in self._history:
-            print(f'\n{item['role'].upper()}:\n', item['content'])
+        # for item in self._history:
+        #     print(f'\n{item['role'].upper()}:\n', item['content'])
         print(f'\nUSER:\n', new_prompt)
         
     def clear_history(self):
