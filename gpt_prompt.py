@@ -13,8 +13,8 @@ class GPTClient:
         self._history = []
 
     def _get_response(self, prompt_text, 
-                      model = "gpt-3.5-turbo-16k-0613",
-                      max_tokens = 2000,
+                      model,
+                      max_tokens=None,
                       temperature = 0, **kwargs):
         new_message = { "role": "user",
                         "content": prompt_text
@@ -22,8 +22,7 @@ class GPTClient:
         self._history.append(new_message)
 
         response = self._client.chat.completions.create(model=model, messages=self._history,
-                                                        temperature=temperature, max_tokens=max_tokens,
-                                                        top_p=1, frequency_penalty=0, presence_penalty=0, **kwargs)
+                                                        temperature=temperature, max_tokens=max_tokens  , **kwargs)
         message = response.choices[0].message
         self._history.append({
             "role": message.role,

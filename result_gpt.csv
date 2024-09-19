@@ -2293,52 +2293,6 @@ class Animal:
 
 class Response:
     status:    str = 'Not Found'","wrong","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_cost = (item_price
-              * quantity
-              + shipping_fee
-              - discount)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_income = (salary
-                + freelance_income
-                + rental_income
-                - tax_deduction)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","final_score = (test_score
-               * weight_factor
-               + bonus_points
-               - penalty_points)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_profit = (revenue
-              / cost_of_goods_sold
-              - operating_expenses
-              + interest_income)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","balance = (initial_balance
-           + deposits
-           - withdrawals
-           / service_fees)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_expense = (food
-                 + transport
-                 / utilities
-                 - discounts_received)","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_assets = (total_assets
-              - total_liabilities
-              + market_value_adjustment)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","annual_savings = (salary
-                  - rent
-                  - utilities
-                  - entertainment_expense)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","remaining_budget = (allocated_budget
-                    - amounts_spent
-                    + cash_back
-                    - savings_transferred)
-","correct","True"
-"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","final_amount = (principal
-                * (1 + interest_rate)
-                - early_withdrawal_penalty)","correct","True"
 "Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","vals = (1, 2, 3,)
 ","correct","True"
 "Avoid extraneous whitespace Between a trailing comma and a following close parenthesis","numbers = (4, 5,)
@@ -2566,3 +2520,66 @@ setup_files(FILE_NAMES,
         return
     if number % 2 != 0:
         return None","wrong","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_cost = (base_cost
+              + additional_charges
+              + (taxes - discounts)
+              - shipping_fee
+              - promo_code_value)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","final_grade = (assignments
+               + midterm_exam
+               + (final_exam - missed_exams)
+               - participation_score
+               - extra_credits)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","net_profit = (revenue
+              - costs
+              - (tax_expense + interest_expense)
+              + other_income
+              + adjustment)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","weighted_score = (quiz_score
+                  * weight_quiz
+                  + (exam_score - penalty)
+                  - extra_credit
+                  - participation)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","remaining_balance = (initial_balance
+                     - withdrawals
+                     + (deposits * interest_rate)
+                     - fees
+                     - penalties)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","adjusted_salary = (base_salary
+                   + bonuses
+                   + (overtime - deductions)
+                   - tax_payable
+                   - other_deductions)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","total_points = (points_from_games
+                + bonus_points
+                + (points_from_quests
+                   - missed_points * challenge_factor)
+                - penalty_points
+                - deductions)","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","energy_used = (energy_initial
+               + adjust_energy(energy_added)
+               - (energy_lost / efficiency_factor
+                  - energy_recover)
+               + energy_bonus
+               - energy_penalty)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","score = (goals
+         + assists
+         + (calculate_penalty(penalty_drawn)
+            - penalty_missed)
+         + overtime_goals
+         - penalty_points)
+","correct","True"
+"Displayed formulas always break before binary operations. Operators should be adjacent to their operands.","accounting_result = (gross_income
+                     - operating_expenses
+                     + (investment_income
+                        - report_expense(expenses_from_investments)
+                        / expense_ratio)
+                     - tax_provision
+                     + adjustments)","correct","True"
